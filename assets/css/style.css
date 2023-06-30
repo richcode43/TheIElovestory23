@@ -1087,6 +1087,9 @@ a{
 }
 
 @media (max-width: 991px) {
+    .events-section .event{
+        flex-direction: column;
+    }
     .events-section .event .img-holder {
       width: 100%;
       float: none;
