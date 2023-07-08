@@ -1801,8 +1801,11 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-.airbnb-Header > .scrollButtons{
-    visibility: hidden;
+.moreInfo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.airbnb-Header .moreInfo a{
+    color: var(--sectionTitleColor);
 }
 .airbnb_details{
     height: auto;
