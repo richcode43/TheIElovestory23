@@ -248,9 +248,9 @@
                                         <div id="seconds">00</div> <span>Seconds</span> 
                                     </div>
                                 </div>
-                                <div id="endMessage">
+                                <!-- <div id="endMessage">
                                     <h3><span style="display:block;">Hurray!!!</span> Its your wedding day</h3>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         
@@ -735,12 +735,20 @@
                                 <div class="airbnb_details">
                                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                         <div class="carousel-inner">
+                                            <!-- icon to view apartment video -->
                                             <div class="airbnbVideo">
-                                                <a data-fancybox data-width="640" data-height="640" href="assets/media/ridasApartment.mp4">
+                                                <a data-fancybox data-width="640" data-height="640" href="assets/media/ridasApartment.mp4" title="Watch video">
                                                     <i class="fa-solid fa-video" ></i>
                                                 </a>
-                                               
                                             </div>
+
+                                             <!-- icon to view airbnb amenities -->
+                                             <div class="airbnbInfo">
+                                                <a data-fancybox data-src="#ridaApartments" title="Learn More">
+                                                    <i class="bi bi-info-circle"></i>
+                                                </a>
+                                            </div> 
+
                                           <div class="carousel-item active">
                                             <img src="assets/images/airbnb/ridaApartments/ridasShortlet1.jpeg" class="d-block" alt="">
                                           </div>
@@ -767,10 +775,117 @@
                                     <h6>Agent Name: Victor Ogugu</h6>
                                     <h6>Agent Number: 08120207444</h6>
                                     <h6>&#8358 120k per night (Service inclusive)</h6>
+
+                                    <!-- modal showing more info on the aprtment -->
+                                    <div class="apartmentDetails" id="ridaApartments">
+                                        <h5>What this place offers</h5>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Entertainment</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-tv"></i></div>
+                                            <div>UHD Smart TV</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-badge-hd"></i></div>
+                                            <div>Dstv Decoder</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-speaker"></i></div>
+                                            <div>Sound system</div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Kitchen and Dining</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M25 1a2 2 0 0 1 2 1.85V29a2 2 0 0 1-1.85 2H7a2 2 0 0 1-2-1.85V3a2 2 0 0 1 1.85-2H7zm0 10H7v18h18zm-15 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM25 3H7v6h18zM10 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+                                            <div>Refrigerator / Freezer</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M29 3a2 2 0 0 1 2 1.85V27a2 2 0 0 1-1.85 2H3a2 2 0 0 1-2-1.85V5a2 2 0 0 1 1.85-2H3zm0 2H3v22h26zm-6 2v18H5V7zm-2 2H7v14h3a4.97 4.97 0 0 1-1-2.72V17h10v3a4.98 4.98 0 0 1-1 3h3zm-4 10h-6v1a3 3 0 0 0 2.65 2.98l.17.01.18.01a3 3 0 0 0 3-2.82V20zm9-8a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+                                            <div>
+                                                Electric Cooker / Microwave
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M29 1v2a13 13 0 0 0-.3 26h.3v2a15 15 0 0 1-.31-30zM3 1h2v6h2V1h2v6h2V1h2v9a5 5 0 0 1-4 4.9V31H7V14.9a5.01 5.01 0 0 1-3.98-4.44L3 10.22V10zm26 6v2a7 7 0 0 0-.24 14H29v2a9 9 0 0 1-.27-18zM11 9H5v1.15a3 3 0 0 0 6 .03V10z"></path></svg></div>
+                                            <div>Dishes and Silverware</div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Laundry</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M26.29 2a3 3 0 0 1 2.96 2.58c.5 3.56.75 7.37.75 11.42s-.25 7.86-.75 11.42a3 3 0 0 1-2.79 2.57l-.17.01H5.7a3 3 0 0 1-2.96-2.58C2.25 23.86 2 20.05 2 16s.25-7.86.75-11.42a3 3 0 0 1 2.79-2.57L5.7 2zm0 2H5.72a1 1 0 0 0-1 .86A80.6 80.6 0 0 0 4 16c0 3.96.24 7.67.73 11.14a1 1 0 0 0 .87.85l.11.01h20.57a1 1 0 0 0 1-.86c.48-3.47.72-7.18.72-11.14 0-3.96-.24-7.67-.73-11.14A1 1 0 0 0 26.3 4zM16 7a9 9 0 1 1 0 18 9 9 0 0 1 0-18zm-5.84 7.5c-.34 0-.68.02-1.02.07a7 7 0 0 0 13.1 4.58 9.09 9.09 0 0 1-6.9-2.37l-.23-.23a6.97 6.97 0 0 0-4.95-2.05zM16 9a7 7 0 0 0-6.07 3.5h.23c2.26 0 4.44.84 6.12 2.4l.24.24a6.98 6.98 0 0 0 6.4 1.9A7 7 0 0 0 16 9zM7 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+                                            <div>Washing Machine / Dryer </div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Home Safety</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-shield-shaded"></i></div>
+                                            <div>Uniformed Security Personnel</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-webcam"></i></div>
+                                            <div>CCTV Camera Survellaince</div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Bedroom & Bath</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="fa-solid fa-bed"></i></div>
+                                            <div>
+                                                3 ensuite bed rooms
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="fa-solid fa-shower"></i></div>
+                                            <div>
+                                                Walk-in Shower
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-fan"></i></div>
+                                            <div>
+                                                Air conditioner
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Extras</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-lightbulb"></i></div>
+                                            <div>
+                                                Uninterrupted Power Supply
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-water"></i></div>
+                                            <div>
+                                                Constant Water Supply
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        
+                                    </div>
                                 </div>
                                 <div class="airbnb_details">
                                     <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                         <div class="carousel-inner">
+                                            <!-- icon to view airbnb amenities -->
+                                            <div class="airbnbInfo">
+                                                <a data-fancybox data-src="#superCastle" title="Learn More">
+                                                   <i class="bi bi-info-circle"></i>
+                                                </a>
+                                            </div> 
+
                                           <div class="carousel-item active">
                                             <img src="assets/images/airbnb/superCastle/castle1.jpg" class="d-block" alt="">
                                           </div>
@@ -797,10 +912,89 @@
                                     <h6>Agent Name: Victor Ogugu</h6>
                                     <h6>Agent Number: 08120207444</h6>
                                     <h6>&#8358 40k per night</h6>
+
+                                    <!-- modal showing more info on the aprtment -->
+                                    <div class="apartmentDetails" id="superCastle">
+                                        <h5>What this place offers</h5>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Entertainment</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-tv"></i></div>
+                                            <div>Smart TV</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-badge-hd"></i></div>
+                                            <div>Dstv Decoder</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="fa-solid fa-n"></i></div>
+                                            <div>Netflix</div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Laundry</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M26.29 2a3 3 0 0 1 2.96 2.58c.5 3.56.75 7.37.75 11.42s-.25 7.86-.75 11.42a3 3 0 0 1-2.79 2.57l-.17.01H5.7a3 3 0 0 1-2.96-2.58C2.25 23.86 2 20.05 2 16s.25-7.86.75-11.42a3 3 0 0 1 2.79-2.57L5.7 2zm0 2H5.72a1 1 0 0 0-1 .86A80.6 80.6 0 0 0 4 16c0 3.96.24 7.67.73 11.14a1 1 0 0 0 .87.85l.11.01h20.57a1 1 0 0 0 1-.86c.48-3.47.72-7.18.72-11.14 0-3.96-.24-7.67-.73-11.14A1 1 0 0 0 26.3 4zM16 7a9 9 0 1 1 0 18 9 9 0 0 1 0-18zm-5.84 7.5c-.34 0-.68.02-1.02.07a7 7 0 0 0 13.1 4.58 9.09 9.09 0 0 1-6.9-2.37l-.23-.23a6.97 6.97 0 0 0-4.95-2.05zM16 9a7 7 0 0 0-6.07 3.5h.23c2.26 0 4.44.84 6.12 2.4l.24.24a6.98 6.98 0 0 0 6.4 1.9A7 7 0 0 0 16 9zM7 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+                                            <div>Washing Machine / Dryer </div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Home Safety</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-shield-shaded"></i></div>
+                                            <div>Uniformed Security Personnel</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-webcam"></i></div>
+                                            <div>CCTV Camera Survellaince</div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Internet</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-wifi"></i></div>
+                                            <div>
+                                                Wifi
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Extras</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-lightbulb"></i></div>
+                                            <div>
+                                                Uninterrupted Power Supply
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-water"></i></div>
+                                            <div>
+                                                Constant Water Supply
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-p-circle"></i></div>
+                                            <div>
+                                                Free parking on premsies
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="airbnb_details">
                                     <div id="carouselExampleFade3" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                         <div class="carousel-inner">
+                                             <!-- icon to view airbnb amenities -->
+                                             <div class="airbnbInfo">
+                                                <a data-fancybox data-src="#javesApartment" title="Learn More">
+                                                   <i class="bi bi-info-circle"></i>
+                                                </a>
+                                            </div> 
+
                                           <div class="carousel-item active">
                                             <img src="assets/images/airbnb/javesApartment/j1.jpeg" class="d-block" alt="">
                                           </div>
@@ -830,7 +1024,250 @@
                                     <h6>Agent Name: Victor Ogugu</h6>
                                     <h6>Agent Number: 08120207444</h6>
                                     <h6>&#8358 70k per night</h6>
+
+                                    <!-- modal showing more info on the aprtment -->
+                                    <div class="apartmentDetails" id="javesApartment">
+                                        <h5>What this place offers</h5>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Entertainment</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-tv"></i></div>
+                                            <div> TV</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-badge-hd"></i></div>
+                                            <div>Dstv Decoder</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-speaker"></i></div>
+                                            <div>Sound system</div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Kitchen and Dining</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M25 1a2 2 0 0 1 2 1.85V29a2 2 0 0 1-1.85 2H7a2 2 0 0 1-2-1.85V3a2 2 0 0 1 1.85-2H7zm0 10H7v18h18zm-15 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM25 3H7v6h18zM10 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+                                            <div>Refrigerator / Freezer</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M29 3a2 2 0 0 1 2 1.85V27a2 2 0 0 1-1.85 2H3a2 2 0 0 1-2-1.85V5a2 2 0 0 1 1.85-2H3zm0 2H3v22h26zm-6 2v18H5V7zm-2 2H7v14h3a4.97 4.97 0 0 1-1-2.72V17h10v3a4.98 4.98 0 0 1-1 3h3zm-4 10h-6v1a3 3 0 0 0 2.65 2.98l.17.01.18.01a3 3 0 0 0 3-2.82V20zm9-8a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+                                            <div>
+                                                Electric Cooker / Microwave
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M29 1v2a13 13 0 0 0-.3 26h.3v2a15 15 0 0 1-.31-30zM3 1h2v6h2V1h2v6h2V1h2v9a5 5 0 0 1-4 4.9V31H7V14.9a5.01 5.01 0 0 1-3.98-4.44L3 10.22V10zm26 6v2a7 7 0 0 0-.24 14H29v2a9 9 0 0 1-.27-18zM11 9H5v1.15a3 3 0 0 0 6 .03V10z"></path></svg></div>
+                                            <div>Dishes and Silverware</div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Laundry</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M26.29 2a3 3 0 0 1 2.96 2.58c.5 3.56.75 7.37.75 11.42s-.25 7.86-.75 11.42a3 3 0 0 1-2.79 2.57l-.17.01H5.7a3 3 0 0 1-2.96-2.58C2.25 23.86 2 20.05 2 16s.25-7.86.75-11.42a3 3 0 0 1 2.79-2.57L5.7 2zm0 2H5.72a1 1 0 0 0-1 .86A80.6 80.6 0 0 0 4 16c0 3.96.24 7.67.73 11.14a1 1 0 0 0 .87.85l.11.01h20.57a1 1 0 0 0 1-.86c.48-3.47.72-7.18.72-11.14 0-3.96-.24-7.67-.73-11.14A1 1 0 0 0 26.3 4zM16 7a9 9 0 1 1 0 18 9 9 0 0 1 0-18zm-5.84 7.5c-.34 0-.68.02-1.02.07a7 7 0 0 0 13.1 4.58 9.09 9.09 0 0 1-6.9-2.37l-.23-.23a6.97 6.97 0 0 0-4.95-2.05zM16 9a7 7 0 0 0-6.07 3.5h.23c2.26 0 4.44.84 6.12 2.4l.24.24a6.98 6.98 0 0 0 6.4 1.9A7 7 0 0 0 16 9zM7 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+                                            <div>Washing Machine / Dryer </div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Bedroom & Bath</h6>
+                                        
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M25 1a3 3 0 0 1 3 2.82V26a3 3 0 0 1-2.82 3H25v2h-2v-2H9v2H7v-2a3 3 0 0 1-3-2.82V4a3 3 0 0 1 2.82-3H25zm1 20H6v5a1 1 0 0 0 .88 1H25a1 1 0 0 0 1-.88V21zm-10 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm9-20h-8v16h9V4a1 1 0 0 0-.88-1H25zM15 3H7a1 1 0 0 0-1 .88V19h9V3zm-3 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm8 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+                                            <div>
+                                                Clothing Storage: walk-in closet
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-fan"></i></div>
+                                            <div>
+                                                Air conditioner
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Extras</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-lightbulb"></i></div>
+                                            <div>
+                                                Uninterrupted Power Supply
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-water"></i></div>
+                                            <div>
+                                                Constant Water Supply
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        
+                                    </div>
                                 </div>
+                                <div class="airbnb_details">
+                                    <div id="carouselExampleFade4" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <!-- icon to view airbnb amenities -->
+                                            <div class="airbnbInfo">
+                                                <a data-fancybox data-src="#unknown" title="Learn More">
+                                                   <i class="bi bi-info-circle"></i>
+                                                </a>
+                                            </div>
+
+                                            <!-- airbnb details -->
+                                          <div class="carousel-item active">
+                                            <img src="assets/images/airbnb/unknown/pic1.jpeg" class="d-block" alt="">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="assets/images/airbnb/unknown/pic2.jpeg" class="d-block" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="assets/images/airbnb/unknown/pic3.jpeg" class="d-block" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="assets/images/airbnb/unknown/pic4.jpeg" class="d-block" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="assets/images/airbnb/unknown/pic5.jpeg" class="d-block" alt="...">
+                                          </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
+                                          <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+                                          <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <a href="#">Orchid Luxury Residence</a>
+                                    <h6>Agent Name: Susan</h6>
+                                    <h6>Agent Number: 08051159919</h6>
+                                    <h6>&#8358 65k per night</h6>
+
+                                    <!-- modal showing more info on the aprtment -->
+                                    <div class="apartmentDetails" id="unknown">
+                                        <h5>What this place offers</h5>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Entertainment</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-tv"></i></div>
+                                            <div>Smart TV</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-badge-hd"></i></div>
+                                            <div>Dstv Decoder</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-speaker"></i></div>
+                                            <div>Sound system</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="fa-solid fa-n"></i></div>
+                                            <div>Netflix</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="fa-regular fa-circle-dot"></i></div>
+                                            <div>Snooker board</div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Internet</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-wifi"></i></div>
+                                            <div>
+                                                Wifi (Unlimited)
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Kitchen and Dining</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M25 1a2 2 0 0 1 2 1.85V29a2 2 0 0 1-1.85 2H7a2 2 0 0 1-2-1.85V3a2 2 0 0 1 1.85-2H7zm0 10H7v18h18zm-15 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM25 3H7v6h18zM10 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+                                            <div>Refrigerator / Freezer</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M29 3a2 2 0 0 1 2 1.85V27a2 2 0 0 1-1.85 2H3a2 2 0 0 1-2-1.85V5a2 2 0 0 1 1.85-2H3zm0 2H3v22h26zm-6 2v18H5V7zm-2 2H7v14h3a4.97 4.97 0 0 1-1-2.72V17h10v3a4.98 4.98 0 0 1-1 3h3zm-4 10h-6v1a3 3 0 0 0 2.65 2.98l.17.01.18.01a3 3 0 0 0 3-2.82V20zm9-8a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+                                            <div>
+                                                Electric Cooker / Microwave
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M29 1v2a13 13 0 0 0-.3 26h.3v2a15 15 0 0 1-.31-30zM3 1h2v6h2V1h2v6h2V1h2v9a5 5 0 0 1-4 4.9V31H7V14.9a5.01 5.01 0 0 1-3.98-4.44L3 10.22V10zm26 6v2a7 7 0 0 0-.24 14H29v2a9 9 0 0 1-.27-18zM11 9H5v1.15a3 3 0 0 0 6 .03V10z"></path></svg></div>
+                                            <div>Dishes and Silverware</div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Laundry</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M26.29 2a3 3 0 0 1 2.96 2.58c.5 3.56.75 7.37.75 11.42s-.25 7.86-.75 11.42a3 3 0 0 1-2.79 2.57l-.17.01H5.7a3 3 0 0 1-2.96-2.58C2.25 23.86 2 20.05 2 16s.25-7.86.75-11.42a3 3 0 0 1 2.79-2.57L5.7 2zm0 2H5.72a1 1 0 0 0-1 .86A80.6 80.6 0 0 0 4 16c0 3.96.24 7.67.73 11.14a1 1 0 0 0 .87.85l.11.01h20.57a1 1 0 0 0 1-.86c.48-3.47.72-7.18.72-11.14 0-3.96-.24-7.67-.73-11.14A1 1 0 0 0 26.3 4zM16 7a9 9 0 1 1 0 18 9 9 0 0 1 0-18zm-5.84 7.5c-.34 0-.68.02-1.02.07a7 7 0 0 0 13.1 4.58 9.09 9.09 0 0 1-6.9-2.37l-.23-.23a6.97 6.97 0 0 0-4.95-2.05zM16 9a7 7 0 0 0-6.07 3.5h.23c2.26 0 4.44.84 6.12 2.4l.24.24a6.98 6.98 0 0 0 6.4 1.9A7 7 0 0 0 16 9zM7 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg></div>
+                                            <div>Washing Machine / Dryer </div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Home Safety</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-shield-shaded"></i></div>
+                                            <div>Uniformed Security Personnel</div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-webcam"></i></div>
+                                            <div>CCTV Camera Survellaince</div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Bedroom & Bath</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="fa-solid fa-bed"></i></div>
+                                            <div>
+                                                3 ensuite bed rooms
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="fa-solid fa-shower"></i></div>
+                                            <div>
+                                                Walk-in Shower
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-fan"></i></div>
+                                            <div>
+                                                Air conditioner
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <h6 class="mt-5 fs-5 mb-5">Extras</h6>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-lightbulb"></i></div>
+                                            <div>
+                                                Uninterrupted Power Supply
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="amenities">
+                                            <div class="icon"><i class="bi bi-water"></i></div>
+                                            <div>
+                                                Constant Water Supply
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        
+                                    </div>
+                                </div>
+
                             </div>       
                         </div>   
                     </div>

@@ -106,7 +106,7 @@ a{
 .music-box {
     position: fixed;
     display: flex;
-    z-index: 999;
+    z-index: 500;
     bottom: 100px;
     right: 30px;
 }
@@ -791,7 +791,6 @@ a{
 }
 .count-down-section #endMessage{
     display: none;
-    /* background-color: var(--sectionTitleBackground); */
     letter-spacing: 10;
     position: relative;
     top: -10px;
@@ -1832,7 +1831,7 @@ a{
     color: #8c8c8c;
     margin: 0 0 10px 0;
 }
-.airbnbVideo{
+.airbnbVideo,.airbnbInfo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1841,14 +1840,41 @@ a{
     right: 10px;
     bottom: 10px;
     background-color: white;
-    padding: 5px;
-    height: 40px;
-    width: 40px;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
     border: 2px solid var(--sectionTitleColor);
     border-radius: 50%;
 }
-.airbnbVideo a{
+.airbnbVideo>a,.airbnbInfo i{
     color: var(--sectionTitleColor);
+}
+.airbnbInfo{
+    left: 10px;
+}
+.apartmentDetails{
+    background-color: white;
+    display: none;
+    justify-content: center;
+    width: 50%;
+    height: 80%;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 24px 24px;
+}
+.apartmentDetails h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.apartmentDetails h6{
+    font-weight: bold;
+}
+.apartmentDetails .amenities{
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 .carousel-item{
     width: 100%;
@@ -1882,6 +1908,9 @@ a{
 @media(max-width: 991px){
     .airbnbs{
         justify-content: flex-start;
+    }
+    .apartmentDetails{
+        width: 80%;
     }
     .moreInfo{
         font-size: 15px;
@@ -2016,7 +2045,7 @@ a{
     position: fixed;
     bottom: 50px;
     right: 35px;
-    z-index: 999;
+    z-index: 500;
     font-size: 30px;
     color: red;
     text-align: center;
@@ -2119,7 +2148,7 @@ a{
     overflow: hidden;
     transform: translateX(calc(100% + 25px));
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
-    z-index: 9999;
+    z-index: 700;
 }
   
 .success.active {
