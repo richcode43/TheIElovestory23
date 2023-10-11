@@ -271,6 +271,7 @@ a{
     align-items: center;
     text-align: left;
 }
+
 .wedding-announcement{
     width: 100%;
     height: 100%;
@@ -399,6 +400,9 @@ a{
     .wedding-announcement .save-the-date h4{
         margin-top: 30px;
         font-size: 30px;
+    }
+    .inner-position{
+        background-position-y: 0px !important;
     }
 }
 @media (max-width: 768px) {
@@ -584,10 +588,10 @@ a{
 } 
 
 .groom .img_holder{
-    background: url("../images/couple/groom.jpg")center center/cover no-repeat;
+    background: url("../images/couple/groom.JPG")center center/cover no-repeat;
 }
 .bride .img_holder{
-    background: url("../images/couple/bride.jpg")center center/cover no-repeat;
+    background: url("../images/couple/bride.JPG")center center/cover no-repeat;
 }
 
 .wedding-couple-section .details p{
@@ -724,9 +728,10 @@ a{
 --------------------------------------------------------------*/
 .count-down-section{
     position: relative;
-    background-image: url("../images/general/countdown-bg.jpg");
+    background-image: url("../images/general/countdown-bg.JPG");
     background-size: cover;
-    background-position: 50% -42.2857px;
+    /* background-position: 50% -42.2857px; */
+    background-position-y: -800px;
     padding: 200px 0;
 }
 .count-down-section:before {
@@ -2022,7 +2027,7 @@ a{
 }
   /*  */
 .site-footer {
-    background: url("../images/general/footer.jpg") center center/cover no-repeat local;
+    background: url("../images/general/footer-img.jpg") center center/cover no-repeat local;
     text-align: center;
     color: var(--sectionTitleColor);
     padding: 160px 0;
