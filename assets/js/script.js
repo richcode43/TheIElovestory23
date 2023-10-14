@@ -199,7 +199,7 @@ window.addEventListener('scroll', e => {
        COUNT DOWN TIMER
 -------------------------------------------*/
 // Set the date we're counting down to
-const targetDate = new Date('2023-10-14 10:00:00').getTime();
+const targetDate = new Date('2023-10-14 00:00:00').getTime();
 
 function updateTimer() {
     const now = new Date().getTime();
