@@ -199,7 +199,7 @@ window.addEventListener('scroll', e => {
        COUNT DOWN TIMER
 -------------------------------------------*/
 // Set the date we're counting down to
-const targetDate = new Date('2023-10-14 22:57:11').getTime();
+const targetDate = new Date('2023-10-14 10:00:00').getTime();
 
 function updateTimer() {
     const now = new Date().getTime();
@@ -214,9 +214,50 @@ function updateTimer() {
     document.getElementById('minutes').textContent = minutes;
     document.getElementById('seconds').textContent = seconds;
 
-    if (distance < 0) {
+    if (distance < 1) {
         document.getElementById('clock').style.display = 'none';
         document.getElementById('endMessage').style.display = 'block';
+        // do this for 30 seconds
+        var duration = 30 * 1000;
+        var end = Date.now() + duration;
+
+        (function frame() {
+        // launch a few confetti from the left edge
+        confetti({
+            particleCount: 3,
+            angle: 360,
+            spread: 100,
+            origin: {
+                x: Math.random(),
+                // since they fall down, start a bit higher than random
+                y: Math.random() - 0.2
+              }
+        });
+        // and launch a few from the right edge
+        confetti({
+            particleCount: 3,
+            angle: 360,
+            spread: 100,
+            origin: {
+                x: Math.random(),
+                // since they fall down, start a bit higher than random
+                y: Math.random() - 0.2
+              }
+        });
+
+        // keep going until we are out of time
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+        }());
+        // clearInterval(updateTimer);
+        setTimeout(() => {
+            confetti.reset();
+        }, 3000);
+         // keep going until we are out of time
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
     }
 }
 setInterval(updateTimer, 1000);
